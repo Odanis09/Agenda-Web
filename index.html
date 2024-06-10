@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="getContactos()">
+    <div class="cabecera">Agenda de Contactos</div>
+    <br>
+    <br>
+    <form id="contact-form">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="apellido" placeholder="Apellido" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+        <button type="submit">Agregar Contacto</button>
+    </form>
+    <br>
+    <div id="status"></div> <!-- Elemento para mostrar mensajes de estado -->
+    <br>
+    <table id="cuerpo" class="base cuerpo">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas de la tabla se agregarán aquí -->
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
